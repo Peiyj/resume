@@ -6,20 +6,20 @@ const Skills = () => {
 
   const skillCategories = [
     {
+      titleKey: "aiAndLlm",
+      skills: ["OpenAI API", "GPT-4.1", "Prompt Engineering", "Structured Output Parsing", "Multimodal AI", "MCP (Model Context Protocol)", "AI Agent Frameworks"]
+    },
+    {
       titleKey: "languages",
-      skills: ["Python", "Java", "JavaScript", "TypeScript", "GoLang", "C++", "Swift", "Objective C", "SQL", "HTML/CSS"]
+      skills: ["Java", "Python", "Go", "JavaScript", "TypeScript", "SQL", "C++"]
     },
     {
-      titleKey: "frameworks",
-      skills: ["React", "Angular", "Node.js", "Ember.js", "Chart.js", "JavaFX", "Spring Boot", "Django", "Flask", "Express.js", "Bootstrap", "jQuery"]
+      titleKey: "backendAndData",
+      skills: ["Spring Boot", "gRPC", "GraphQL", "Kafka", "Redis", "PostgreSQL", "DynamoDB", "MySQL", "MongoDB", "Airflow", "Elasticsearch"]
     },
     {
-      titleKey: "tools",
-      skills: ["Git", "Docker", "Kubernetes", "AWS", "Jenkins", "GitHub Actions", "MS TFS", "Handlebars"]
-    },
-    {
-      titleKey: "technologies",
-      skills: ["PostgreSQL", "MySQL", "Redis", "Kafka", "Elasticsearch", "Spark", "Hadoop", "Airflow", "MongoDB", "Firebase", "Firestore", "ML Kit", "Kubernetes"]
+      titleKey: "cloudAndInfra",
+      skills: ["AWS (EKS, Lambda, MSK, DynamoDB, S3, Aurora)", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "Jenkins"]
     }
   ];
 
