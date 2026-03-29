@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -29,8 +29,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -82,7 +82,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, parsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
@@ -108,13 +108,13 @@
     {Lead Engineer}{2024 -- Present}
     \resumeItemListStart
       \resumeItem{Prompt Architecture}
-        {Architected a template-based prompt system with 6+ specialized prompt executors for program outlines, domain queries, content suggestions, and collection filtering using OpenAI GPT-4.1.}
+        {Architected template-based prompt system with 6+ specialized executors for program outlines, domain queries, content suggestions, and collection filtering using OpenAI GPT-4.1.}
       \resumeItem{Multimodal Processing}
-        {Implemented multimodal document processing --- PDF/DOCX uploads converted to images via PDFBox/POI for vision-capable LLM prompts with signed S3 URLs.}
+        {Implemented multimodal document processing --- PDF/DOCX converted to images via PDFBox/POI for vision-capable LLM prompts with signed S3 URLs.}
       \resumeItem{Production LLM Integration}
-        {Built structured JSON output parsing with retry logic and fault tolerance for reliable LLM response handling. Migrated from Azure OpenAI to native OpenAI client with Spring Retry-based resilience patterns.}
+        {Built structured JSON output parsing with retry logic and fault tolerance. Migrated from Azure OpenAI to native OpenAI client with Spring Retry-based resilience patterns.}
       \resumeItem{AI Content Pipeline}
-        {Designed AI-ranked content suggestion pipeline integrating product search APIs with LLM-based relevance filtering for enterprise learning program curation.}
+        {Designed AI-ranked content suggestion pipeline integrating product search APIs with LLM-based relevance filtering for enterprise program curation.}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -122,11 +122,9 @@
     {Builder}{2024 -- Present}
     \resumeItemListStart
       \resumeItem{MCP Integration}
-        {Integrate and configure MCP (Model Context Protocol) servers for connecting AI assistants to external tools, APIs, and data sources.}
+        {Build and configure MCP (Model Context Protocol) servers connecting AI assistants to external tools, APIs, and data sources.}
       \resumeItem{Agent Frameworks}
-        {Design reusable agent skills and prompt frameworks for structured AI-assisted development workflows including brainstorming, debugging, code review, and TDD.}
-      \resumeItem{AI-Assisted Development}
-        {Leverage AI coding agents daily for full-cycle software development --- from architecture design through implementation and testing.}
+        {Design reusable agent skills and prompt frameworks for structured AI-assisted development --- brainstorming, debugging, code review, and TDD.}
     \resumeItemListEnd
 
 %-----------EXPERIENCE-----------------
@@ -137,42 +135,41 @@
     {Senior Software Engineer}{Mar 2024 -- Present}
     \resumeItemListStart
       \resumeItem{AI-Powered Curation Platform}
-        {Led a team of 5 engineers to design and build an AI-powered content curation platform using OpenAI GPT-4.1 with multimodal prompt engineering, structured output parsing, and production-grade LLM service integration for enterprise learning program creation.}
+        {Led 5 engineers building an AI content curation platform with OpenAI GPT-4.1, multimodal prompt engineering, and structured output parsing for enterprise learning programs.}
       \resumeItem{Badge Management Platform}
-        {Architected a stream-processing system for real-time badge issuance serving all enterprise organizations, contributing to over \$10M in contract ACVs.}
+        {Architected stream-processing system for real-time badge issuance serving all enterprise organizations, contributing to >\$10M in contract ACVs.}
       \resumeItem{Technical Leadership}
-        {Lead a team of 3--4 engineers designing and shipping enterprise-scale platforms for contract management and badge issuance across Coursera's B2B product line.}
-      \resumeItem{Allowlist Management Platform (P0)}
-        {Led P0 project with 4 engineers, reducing contract-level course update time from 2 weeks to under 10 seconds through near real-time data pipelines.}
+        {Lead 3--4 engineers designing and shipping enterprise-scale platforms for contract management and badge issuance across Coursera's B2B product line.}
+      \resumeItem{Allowlist Management (P0)}
+        {Led P0 project reducing contract-level course update time from 2 weeks to under 10 seconds via near real-time data pipelines.}
       \resumeItem{Internal Tooling}
-        {Built conflict detection workflows with Apache Airflow; launched Retool-based internal platform cutting engineering ops time from 95 minutes to under 5 seconds.}
+        {Built conflict detection workflows with Apache Airflow; launched Retool-based platform cutting engineering ops time from 95 min to <5 sec.}
     \resumeItemListEnd
 
   \resumeSubSubheading
     {Software Engineer II}{Mar 2023 -- Mar 2024}
     \resumeItemListStart
       \resumeItem{Clips Management Platform}
-        {Led team of 3 engineers architecting fault-tolerant distributed system for clips metadata management. Enabled parallel processing reducing update time by 80\%.}
+        {Led 3 engineers architecting fault-tolerant distributed system for clips metadata management; enabled parallel processing reducing update time by 80\%.}
       \resumeItem{Performance Engineering}
-        {Implemented distributed Redis cache reducing P95/P99 read latency by 80\%/92\%. Designed application-level transactions ensuring data integrity for downstream services.}
+        {Implemented distributed Redis cache reducing P95/P99 read latency by 80\%/92\%; designed application-level transactions ensuring data integrity.}
     \resumeItemListEnd
 
   \resumeSubSubheading
     {Software Engineer I}{Jan 2022 -- Mar 2023}
     \resumeItemListStart
       \resumeItem{Migration Platform}
-        {Led Scala-to-Java service migrations, deprecating 12 legacy APIs and \textasciitilde5K lines of code. Built gRPC microservices handling \textasciitilde3K QPS with 98\% test coverage.}
+        {Led Scala-to-Java migrations, deprecating 12 legacy APIs and \textasciitilde5K LOC; built gRPC microservices handling \textasciitilde3K QPS with 98\% test coverage.}
       \resumeItem{Reusable Migration Library}
         {Created migration library with automated dual read/write, adopted by 4 teams across 15 migrations.}
     \resumeItemListEnd
 
-  \vspace{4pt}
   \resumeSubheading
     {Samsara}{San Francisco, CA}
     {Software Engineering Intern}{Jun 2021 -- Oct 2021}
     \resumeItemListStart
       \resumeItem{Config Pusher Optimization}
-        {Optimized Config Pusher System using Go's fan-in concurrency pattern, reducing P95 latency by 90\% through request batching with in-memory queue.}
+        {Optimized Config Pusher using Go's fan-in concurrency pattern, reducing P95 latency by 90\% via request batching with in-memory queue.}
     \resumeItemListEnd
 
 %-----------EDUCATION-----------------
@@ -180,7 +177,6 @@
   \resumeSubheading
     {Northwestern University}{Evanston, IL}
     {Master of Science in Computer Engineering, GPA: 4.0/4.0}{Sep 2020 -- Dec 2021}
-  \vspace{4pt}
   \resumeSubheading
     {University of California, San Diego}{La Jolla, CA}
     {Bachelor of Science in Computer Engineering, GPA: 3.7/4.0}{Sep 2016 -- Jun 2020}
