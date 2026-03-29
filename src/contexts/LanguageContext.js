@@ -31,27 +31,12 @@ export const translations = {
     experience: "💼 Professional Experience",
     education: "🎓 Education",
     skills: "🛠️ Skills",
+    entrepreneurship: "🚀 Entrepreneurship",
     
     // Background section
     backgroundText1: "I'm a **Senior Software Engineer** at **Coursera**, where I build **AI-powered applications** using **large language models** and design **distributed systems** serving millions of learners. I hold an M.S. in **Computer Engineering** from **Northwestern University** (4.0 GPA).",
     backgroundText2: "I specialize in taking **LLM capabilities from prototype to production** — designing prompt architectures, building reliable AI service backends, and integrating generative AI into enterprise-scale platforms. I'm passionate about the intersection of **AI applications** and **robust systems engineering**.",
     backgroundText3: "Outside of work, I'm an active builder in the **AI developer tooling** ecosystem and enjoy **golf**, **ping pong**, and **staying active**.",
-    aiProjects: "🤖 AI Projects",
-    curationBuilderTitle: "AI-Powered Curation Builder Platform",
-    curationBuilderContext: "Coursera",
-    curationBuilderDesc: "Designed and built Coursera's AI-powered content curation platform that enables enterprise clients to build learning programs and collections using generative AI. The platform uses GPT-4.1 to generate program outlines, curate content recommendations, and filter relevant learning materials from Coursera's catalog.",
-    curationBuilderBullet1: "Architected a template-based prompt system with 6+ specialized prompt executors for program outlines, domain queries, content suggestions, and collection filtering",
-    curationBuilderBullet2: "Implemented multimodal document processing — PDF/DOCX uploads converted to images via PDFBox/POI for vision-capable LLM prompts with signed S3 URLs",
-    curationBuilderBullet3: "Built structured JSON output parsing with retry logic and fault tolerance for reliable LLM response handling in production",
-    curationBuilderBullet4: "Designed AI-ranked content suggestion pipeline integrating product search APIs with LLM-based relevance filtering",
-    curationBuilderBullet5: "Migrated from Azure OpenAI to native OpenAI client with Spring Retry-based resilience patterns for production-grade LLM service reliability",
-    aiToolingTitle: "AI Developer Tooling & Workflows",
-    aiToolingContext: "Personal",
-    aiToolingDesc: "Build and maintain AI-augmented engineering workflows using cutting-edge developer tooling for daily software development productivity.",
-    aiToolingBullet1: "Integrate and configure MCP (Model Context Protocol) servers for connecting AI assistants to external tools, APIs, and data sources",
-    aiToolingBullet2: "Design reusable agent skills and prompt frameworks for structured AI-assisted development workflows (brainstorming, debugging, code review, TDD)",
-    aiToolingBullet3: "Leverage AI coding agents daily for full-cycle software development — from architecture design through implementation and testing",
-    
     // Footer
     email: "📧 Email",
     resume: "📄 Resume",
@@ -69,6 +54,8 @@ export const translations = {
     softwareEngineerII: "Software Engineer II",
     softwareEngineerI: "Software Engineer I",
     softwareEngineeringIntern: "Software Engineering Intern",
+    softwareEngineerIntern: "Software Engineer Intern",
+    teachingAssistant: "Teaching Assistant",
     
     // Education
     northwesternUniversity: "Northwestern University",
@@ -90,18 +77,40 @@ export const translations = {
     courseraSeIBullet3: "Created a reusable migration library with automated double read/write, adopted by 4 teams across 15 migrations",
     samsaraBullet1: "Optimized the Config Pusher System using Go's fan-in concurrency pattern, reducing P95 latency by 90% through request batching with an in-memory queue",
     
+    courseraInternDesc: "I supported the Roster Service Migration from Scala to Java, successfully phasing out 6 legacy APIs and deprecating ~1.1K lines of code. During this internship, I implemented 3 gRPC APIs for obtaining and updating learner rosters, handling ~200 QPS with 95% test coverage. Additionally, I contributed to the migration platform that enabled seamless transition between legacy and modern service architectures.",
+    
+    ucsdTaDesc: "I taught FPGA architecture and design flow concepts in SystemVerilog and C to an average of 20 students per day. In this role, I covered topics including FPGA components, synthesis, simulation, verification, timing analysis, and optimization. Moreover, I used Vsim tools to demonstrate design flow and create FPGA projects using SystemVerilog and C. Additionally, I held office hours to assist more than 50 students with their projects by analyzing and debugging code. Through this work, I helped students resolve issues including syntax errors, logic errors, timing violations, resource constraints, and memory leaks.",
+    
+    rocheDesc: "I developed bioinformatics tools for genomic data analysis, accelerating drug discovery research timelines by 40%. Furthermore, I created automated pipelines for processing large-scale sequencing data (10TB+), reducing manual analysis time from weeks to hours. Additionally, I built interactive visualization tools for research scientists that enabled faster identification of genetic variants and biomarkers. Moreover, I implemented cloud-based solutions using AWS that improved data accessibility and collaboration between research teams across multiple locations. Through this work, I contributed to the development of precision medicine algorithms that supported 5+ clinical trials.",
+    
+    c2GroupDesc: "I collaborated on enhancing underground vehicle sensor accuracy using C++, increasing precision from 70% to 90%. Additionally, I optimized image processing speed by 80% by using multithreading and the fan-out pattern in C++.",
+    
+    ucsdHealthDesc: "I developed and deployed a real-time data gathering application using .NET Framework, MongoDB, and REST API. Furthermore, I integrated the application with the hospital's network and sensors to collect and store over 10 GB of data per day in MongoDB. Through this work, I analyzed the data using machine learning algorithms, resulting in a 40% electricity reduction in UCSD hospitals. Moreover, I generated insights and recommendations for optimizing energy usage of light fixtures using Matplotlib, achieving a 40% reduction in electricity consumption.",
+    
+    // Entrepreneurship
+    coFounderCTO: "Co-Founder & CTO",
+    solemateDesc: "Developed the Solemate iOS App using Swift and Objective C for 1.8K daily active patients who have ankle injuries. Designed adaptive UI with CSS to display the rehabilitation data and send it to their doctors using Firestore and ML kit.",
+    
     // Dates
     present: "Present",
     march2024Present: "March 2024 - Present",
     march2023March2024: "March 2023 - March 2024", 
     january2022March2023: "January 2022 - March 2023",
     june2021October2021: "June 2021 - October 2021",
+    january2021March2021: "January 2021 - March 2021",
+    march2020September2020: "March 2020 - September 2020",
+    june2019September2019: "June 2019 - September 2019",
+    july2018October2018: "July 2018 - October 2018",
+    april2018June2018: "April 2018 - June 2018",
     september2020December2021: "September 2020 - December 2021",
     september2016June2020: "September 2016 - June 2020",
+    january2017August2017: "January 2017 - August 2017",
     
     // Locations
     mountainViewCA: "Mountain View, CA",
     sanFranciscoCA: "San Francisco, CA",
+    sanDiegoCA: "San Diego, CA",
+    tucsonAZ: "Tucson, AZ",
     evanstonIL: "Evanston, IL",
     laJollaCA: "La Jolla, CA"
   },
@@ -125,27 +134,12 @@ export const translations = {
     experience: "💼 工作经历",
     education: "🎓 教育背景",
     skills: "🛠️ 技能",
+    entrepreneurship: "🚀 创业经历",
     
     // Background section
     backgroundText1: "我是**Coursera**的**高级软件工程师**，负责使用**大语言模型**构建**AI驱动的应用程序**，并设计服务数百万学习者的**分布式系统**。我拥有**西北大学****计算机工程**硕士学位（GPA **4.0/4.0**）。",
     backgroundText2: "我专注于将**大语言模型能力从原型推向生产**——设计提示架构、构建可靠的AI服务后端，并将生成式AI集成到企业级平台中。我热衷于**AI应用**与**稳健系统工程**的交汇。",
     backgroundText3: "工作之余，我积极参与**AI开发者工具**生态系统建设，也喜欢打**高尔夫球**、**乒乓球**和**健身**。",
-    aiProjects: "🤖 AI 项目",
-    curationBuilderTitle: "AI驱动的内容策展构建平台",
-    curationBuilderContext: "Coursera",
-    curationBuilderDesc: "设计并构建了Coursera的AI驱动内容策展平台，使企业客户能够使用生成式AI构建学习项目和内容集合。该平台使用GPT-4.1生成项目大纲、策展内容推荐，并从Coursera目录中筛选相关学习材料。",
-    curationBuilderBullet1: "设计了基于模板的提示系统，包含6+个专用提示执行器，用于项目大纲、领域查询、内容建议和集合筛选",
-    curationBuilderBullet2: "实现了多模态文档处理——通过PDFBox/POI将PDF/DOCX上传文件转换为图像，用于支持视觉的LLM提示，配合签名S3 URL",
-    curationBuilderBullet3: "构建了结构化JSON输出解析，具备重试逻辑和容错机制，确保生产环境中LLM响应处理的可靠性",
-    curationBuilderBullet4: "设计了AI驱动的内容建议管道，将产品搜索API与基于LLM的相关性过滤相集成",
-    curationBuilderBullet5: "从Azure OpenAI迁移到原生OpenAI客户端，采用Spring Retry弹性模式，实现生产级LLM服务可靠性",
-    aiToolingTitle: "AI开发者工具与工作流",
-    aiToolingContext: "个人项目",
-    aiToolingDesc: "构建和维护AI增强的工程工作流，利用前沿开发者工具提升日常软件开发生产力。",
-    aiToolingBullet1: "集成和配置MCP（模型上下文协议）服务器，将AI助手连接到外部工具、API和数据源",
-    aiToolingBullet2: "设计可复用的Agent技能和提示框架，用于结构化的AI辅助开发工作流（头脑风暴、调试、代码审查、TDD）",
-    aiToolingBullet3: "每日利用AI编码代理进行全周期软件开发——从架构设计到实现和测试",
-    
     // Footer
     email: "📧 邮箱",
     resume: "📄 简历",
@@ -163,6 +157,8 @@ export const translations = {
     softwareEngineerII: "软件工程师II",
     softwareEngineerI: "软件工程师I", 
     softwareEngineeringIntern: "软件工程实习生",
+    softwareEngineerIntern: "软件工程实习生",
+    teachingAssistant: "助教",
     
     // Education
     northwesternUniversity: "西北大学",
@@ -184,18 +180,40 @@ export const translations = {
     courseraSeIBullet3: "创建了具有自动双读/写功能的可复用迁移库，被4个团队在15次迁移中采用",
     samsaraBullet1: "使用Go的扇入并发模式优化配置推送系统，通过内存队列的请求批处理将P95延迟降低90%",
     
+    courseraInternDesc: "我支持了从Scala到Java的名册服务迁移，成功淘汰了6个遗留API并弃用了约1.1K行代码。在这次实习期间，我实施了3个gRPC API，用于获取和更新学习者名册，处理约200 QPS，测试覆盖率达到95%。此外，我为迁移平台做出了贡献，使遗留和现代服务架构之间的无缝过渡成为可能。",
+    
+    ucsdTaDesc: "我使用SystemVerilog和C向平均每天20名学生教授FPGA架构和设计流程概念。在这个角色中，我涵盖了包括FPGA组件、综合、仿真、验证、时序分析和优化在内的主题。此外，我使用Vsim工具演示设计流程，并使用SystemVerilog和C创建FPGA项目。另外，我举办办公时间，通过分析和调试代码帮助50多名学生完成他们的项目。通过这项工作，我帮助学生解决了包括语法错误、逻辑错误、时序违规、资源约束和内存泄漏在内的问题。",
+    
+    rocheDesc: "我开发了用于基因组数据分析的生物信息学工具，将药物发现研究时间线加速了40%。进一步地，我创建了用于处理大规模测序数据(10TB+)的自动化管道，将人工分析时间从数周减少到数小时。此外，我为研究科学家构建了交互式可视化工具，使遗传变异和生物标志物的识别更快。此外，我使用AWS实施了基于云的解决方案，改善了跨多个地点的研究团队之间的数据可访问性和协作。通过这项工作，我为支持5+临床试验的精准医疗算法的开发做出了贡献。",
+    
+    c2GroupDesc: "我合作使用C++增强地下车辆传感器精度，将精度从70%提高到90%。此外，我通过使用多线程和C++中的扇出模式将图像处理速度优化了80%。",
+    
+    ucsdHealthDesc: "我使用.NET Framework、MongoDB和REST API开发并部署了一个实时数据收集应用程序。进一步地，我将应用程序与医院的网络和传感器集成，每天在MongoDB中收集和存储超过10 GB的数据。通过这项工作，我使用机器学习算法分析数据，使UCSD医院的电力减少了40%。此外，我使用Matplotlib生成了优化灯具能源使用的见解和建议，实现了40%的电力消耗减少。",
+    
+    // Entrepreneurship
+    coFounderCTO: "联合创始人兼首席技术官",
+    solemateDesc: "为1.8K名有踝关节损伤的日活跃患者开发了Solemate iOS应用程序，使用Swift和Objective C。设计了自适应UI，使用CSS显示康复数据，并使用Firestore和ML kit将其发送给医生。",
+    
     // Dates
     present: "至今",
     march2024Present: "2024年3月 - 至今",
     march2023March2024: "2023年3月 - 2024年3月", 
     january2022March2023: "2022年1月 - 2023年3月",
     june2021October2021: "2021年6月 - 2021年10月",
+    january2021March2021: "2021年1月 - 2021年3月",
+    march2020September2020: "2020年3月 - 2020年9月",
+    june2019September2019: "2019年6月 - 2019年9月",
+    july2018October2018: "2018年7月 - 2018年10月",
+    april2018June2018: "2018年4月 - 2018年6月",
     september2020December2021: "2020年9月 - 2021年12月",
     september2016June2020: "2016年9月 - 2020年6月",
+    january2017August2017: "2017年1月 - 2017年8月",
     
     // Locations
     mountainViewCA: "加利福尼亚州山景城",
     sanFranciscoCA: "加利福尼亚州旧金山",
+    sanDiegoCA: "加利福尼亚州圣地亚哥",
+    tucsonAZ: "亚利桑那州图森",
     evanstonIL: "伊利诺伊州埃文斯顿",
     laJollaCA: "加利福尼亚州拉霍亚"
   }

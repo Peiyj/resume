@@ -57,10 +57,58 @@ const Experience = () => {
       titleKey: "softwareEngineeringIntern",
       dateKey: "june2021October2021",
       locationKey: "sanFranciscoCA",
-      bulletKeys: [
-        "samsaraBullet1"
-      ],
-      technologies: ["Go", "MongoDB", "PostgreSQL"]
+      descriptionKey: "samsaraDesc",
+      technologies: ["GoLang", "MongoDB", "React", "AWS", "PostgreSQL", "Docker"]
+    },
+    {
+      company: "Coursera",
+      website: "https://www.coursera.org/",
+      logo: "/src/assets/logos/coursera.png",
+      titleKey: "softwareEngineeringIntern",
+      dateKey: "january2021March2021",
+      locationKey: "mountainViewCA",
+      descriptionKey: "courseraInternDesc",
+      technologies: ["Java", "Scala", "gRPC", "JavaScript", "TypeScript", "MongoDB", "HTML", "CSS"]
+    },
+    {
+      company: "UC San Diego",
+      website: "https://ucsd.edu/",
+      logo: "/src/assets/logos/ucsd.png",
+      titleKey: "teachingAssistant",
+      dateKey: "march2020September2020",
+      locationKey: "sanDiegoCA",
+      descriptionKey: "ucsdTaDesc",
+      technologies: ["SystemVerilog", "C", "FPGA", "Vsim", "Hardware Design", "Digital Logic"]
+    },
+    {
+      company: "Roche",
+      website: "https://www.roche.com/",
+      logo: "/src/assets/logos/roche.png",
+      titleKey: "softwareEngineeringIntern",
+      dateKey: "june2019September2019",
+      locationKey: "tucsonAZ",
+      descriptionKey: "rocheDesc",
+      technologies: ["Python", "Java", "SQL", "Docker", "Jenkins"]
+    },
+    {
+      company: "C2 Group",
+      website: "https://www.c2group.us/",
+      logo: "/src/assets/logos/c2group.png",
+      titleKey: "softwareEngineeringIntern",
+      dateKey: "july2018October2018",
+      locationKey: "sanDiegoCA",
+      descriptionKey: "c2GroupDesc",
+      technologies: ["C++", "Image Processing", "Multithreading"]
+    },
+    {
+      company: "UC San Diego Health",
+      website: "https://health.ucsd.edu/",
+      logo: "/src/assets/logos/ucsd-health.png",
+      titleKey: "softwareEngineerIntern",
+      dateKey: "april2018June2018",
+      locationKey: "sanDiegoCA",
+      descriptionKey: "ucsdHealthDesc",
+      technologies: [".NET Framework", "MongoDB", "REST API", "Machine Learning", "Python", "Matplotlib", "Data Analysis"]
     }
   ];
 
@@ -85,11 +133,15 @@ const Experience = () => {
             <span className="location">📍 {t(experience.locationKey)}</span>
           </div>
           <h4>👨‍💻 {t(experience.titleKey)}</h4>
-          <ul className="job-description">
-            {experience.bulletKeys.map((key, bulletIndex) => (
-              <li key={bulletIndex}>{t(key)}</li>
-            ))}
-          </ul>
+          {experience.bulletKeys ? (
+            <ul className="job-description">
+              {experience.bulletKeys.map((key, bulletIndex) => (
+                <li key={bulletIndex}>{t(key)}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{t(experience.descriptionKey)}</p>
+          )}
           <div className="technologies">
             {experience.technologies.map((tech, techIndex) => (
               <span key={techIndex}>{tech}</span>

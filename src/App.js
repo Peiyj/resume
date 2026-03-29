@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Header from './components/Header';
 import Background from './components/Background';
-import AIProjects from './components/AIProjects';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Entrepreneurship from './components/Entrepreneurship';
 import Education from './components/Education';
 import Footer from './components/Footer';
 
@@ -41,8 +41,8 @@ function App() {
       <div className="container">
         <Header darkMode={darkMode} toggleTheme={toggleTheme} />
         <Background />
-        <AIProjects />
         <Experience />
+        <Entrepreneurship />
         <Education />
         <Skills />
         <Footer />
