@@ -16,9 +16,10 @@ const Experience = () => {
         "courseraSeniorBullet1",
         "courseraSeniorBullet2",
         "courseraSeniorBullet3",
-        "courseraSeniorBullet4"
+        "courseraSeniorBullet4",
+        "courseraSeniorBullet5"
       ],
-      technologies: ["Java", "gRPC", "AWS DynamoDB", "AWS Lambda", "Apache Airflow", "Terraform", "Retool", "AWS EKS", "AWS MSK", "Kafka", "PostgreSQL", "GraphQL"]
+      technologies: ["Java", "gRPC", "OpenAI GPT-4.1", "Spring Boot", "AWS DynamoDB", "AWS Lambda", "Apache Airflow", "Terraform", "Retool", "Kafka", "PostgreSQL", "GraphQL"]
     },
     {
       company: "Coursera",
