@@ -97,6 +97,82 @@
   \href{https://linkedin.com/in/patrickpei11}{linkedin.com/in/patrickpei11} & \\
 \end{tabular*}
 
+\vspace{4pt}
+\small{Senior Software Engineer building AI-powered products and scalable distributed systems at Coursera. Specializing in LLM application development, prompt engineering, and enterprise-scale AI integration.}
+
+%-----------AI PROJECTS-----------------
+\section{AI Projects}
+
+  \resumeSubheading
+    {AI-Powered Curation Builder Platform}{Coursera}
+    {Lead Engineer}{2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Prompt Architecture}
+        {Architected a template-based prompt system with 6+ specialized prompt executors for program outlines, domain queries, content suggestions, and collection filtering using OpenAI GPT-4.1.}
+      \resumeItem{Multimodal Processing}
+        {Implemented multimodal document processing --- PDF/DOCX uploads converted to images via PDFBox/POI for vision-capable LLM prompts with signed S3 URLs.}
+      \resumeItem{Production LLM Integration}
+        {Built structured JSON output parsing with retry logic and fault tolerance for reliable LLM response handling. Migrated from Azure OpenAI to native OpenAI client with Spring Retry-based resilience patterns.}
+      \resumeItem{AI Content Pipeline}
+        {Designed AI-ranked content suggestion pipeline integrating product search APIs with LLM-based relevance filtering for enterprise learning program curation.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {AI Developer Tooling \& Workflows}{Personal}
+    {Builder}{2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{MCP Integration}
+        {Integrate and configure MCP (Model Context Protocol) servers for connecting AI assistants to external tools, APIs, and data sources.}
+      \resumeItem{Agent Frameworks}
+        {Design reusable agent skills and prompt frameworks for structured AI-assisted development workflows including brainstorming, debugging, code review, and TDD.}
+      \resumeItem{AI-Assisted Development}
+        {Leverage AI coding agents daily for full-cycle software development --- from architecture design through implementation and testing.}
+    \resumeItemListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+
+  \resumeSubheading
+    {Coursera}{Mountain View, CA}
+    {Senior Software Engineer}{Mar 2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Technical Leadership}
+        {Lead a team of 3--4 engineers designing and shipping enterprise-scale platforms for contract management and badge issuance across Coursera's B2B product line.}
+      \resumeItem{Badge Management Platform}
+        {Architected a stream-processing system for real-time badge issuance serving all enterprise organizations, contributing to over \$10M in contract ACVs.}
+      \resumeItem{Allowlist Management Platform (P0)}
+        {Led P0 project with 4 engineers, reducing contract-level course update time from 2 weeks to under 10 seconds through near real-time data pipelines.}
+      \resumeItem{Internal Tooling}
+        {Built conflict detection workflows with Apache Airflow; launched Retool-based internal platform cutting engineering ops time from 95 minutes to under 5 seconds.}
+    \resumeItemListEnd
+
+  \resumeSubSubheading
+    {Software Engineer II}{Mar 2023 -- Mar 2024}
+    \resumeItemListStart
+      \resumeItem{Clips Management Platform}
+        {Led team of 3 engineers architecting fault-tolerant distributed system for clips metadata management. Enabled parallel processing reducing update time by 80\%.}
+      \resumeItem{Performance Engineering}
+        {Implemented distributed Redis cache reducing P95/P99 read latency by 80\%/92\%. Designed application-level transactions ensuring data integrity for downstream services.}
+    \resumeItemListEnd
+
+  \resumeSubSubheading
+    {Software Engineer I}{Jan 2022 -- Mar 2023}
+    \resumeItemListStart
+      \resumeItem{Migration Platform}
+        {Led Scala-to-Java service migrations, deprecating 12 legacy APIs and \textasciitilde5K lines of code. Built gRPC microservices handling \textasciitilde3K QPS with 98\% test coverage.}
+      \resumeItem{Reusable Migration Library}
+        {Created migration library with automated dual read/write, adopted by 4 teams across 15 migrations.}
+    \resumeItemListEnd
+
+  \vspace{4pt}
+  \resumeSubheading
+    {Samsara}{San Francisco, CA}
+    {Software Engineering Intern}{Jun 2021 -- Oct 2021}
+    \resumeItemListStart
+      \resumeItem{Config Pusher Optimization}
+        {Optimized Config Pusher System using Go's fan-in concurrency pattern, reducing P95 latency by 90\% through request batching with in-memory queue.}
+    \resumeItemListEnd
+
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubheading
@@ -107,53 +183,13 @@
     {University of California, San Diego}{La Jolla, CA}
     {Bachelor of Science in Computer Engineering, GPA: 3.7/4.0}{Sep 2016 -- Jun 2020}
 
-%-----------EXPERIENCE-----------------
-\section{Experience}
-
-  \resumeSubheading
-    {Coursera}{Mountain View, CA}
-    {Senior Software Engineer}{Mar 2024 -- Present}
-    \resumeItemListStart
-      \resumeItem{Allowlist Management Platform (P0 Initiative)}
-        {Led cross-functional P0 project with 4 engineers implementing near real-time data platform for enterprise contracts (10M+ learners), reducing customer onboarding from 2 weeks to under 10 seconds. Architected fault-tolerant Java/gRPC microservice with 99.9\% uptime, handling 50K+ concurrent updates.}
-      \resumeItem{Badge Management Platform \& Revenue Growth}
-        {Spearheaded team of 3 engineers building real-time stream-processing platform for badge issuance across 500+ organizations, directly contributing to over \$10M in contract ACVs. Designed event-driven architecture using Kafka Connect CDC with Amazon MSK, achieving 99.95\% data consistency.}
-      \resumeItem{Internal Tooling \& Operational Excellence}
-        {Launched Retool-based internal management platform reducing engineering operational overhead from 95 minutes to under 5 seconds (99.9\% efficiency gain). Architected scalable ETL pipeline processing 100TB+ daily data from AWS RDS Aurora to Snowflake EDW.}
-    \resumeItemListEnd
-
-  \resumeSubSubheading
-    {Software Engineer II}{Mar 2023 -- Mar 2024}
-    \resumeItemListStart
-      \resumeItem{Clips Management Platform (Large-Scale Distributed Systems)}
-        {Led team of 3 engineers architecting fault-tolerant distributed system for video clips metadata management serving 100M+ course views globally. Implemented event sourcing with CQRS pattern, achieving 80\% faster metadata updates through parallel processing and optimistic locking.}
-      \resumeItem{Performance Engineering \& Caching Strategy}
-        {Designed and implemented distributed Redis Cluster (20+ nodes) reducing P95/P99 API latency by 80\%/92\% respectively for 50K+ QPS. Built application-level distributed transactions with saga pattern ensuring ACID properties across 15+ microservices.}
-      \resumeItem{Microservices Architecture \& Scalability}
-        {Architected Java Spring Boot microservices with hexagonal architecture supporting 1M+ concurrent operations. Implemented circuit breaker patterns, bulkhead isolation, achieving 99.95\% availability during 10x traffic spikes.}
-    \resumeItemListEnd
-
-  \resumeSubSubheading
-    {Software Engineer I}{Jan 2022 -- Mar 2023}
-    \resumeItemListStart
-      \resumeItem{Large-Scale Migration Platform \& Technical Leadership}
-        {Led critical Contract and User service migrations from Scala to Java affecting 50M+ users, phasing out 12 legacy APIs and eliminating 5K+ lines of technical debt. Architected zero-downtime migration library with automated dual-write/read strategy, deployed across 15 migrations with 99.9\% success rate.}
-      \resumeItem{High-Performance gRPC APIs \& Service Mesh}
-        {Designed and implemented 19 production gRPC microservices handling 3.2K+ QPS with 98\% test coverage. Built learner profile service supporting 200+ QPS with sub-50ms P95 latency, integrated with Istio service mesh for observability.}
-      \resumeItem{Distributed Systems Architecture \& Data Processing}
-        {Architected event-driven microservices ecosystem processing 1B+ events daily with Apache Kafka and Confluent Schema Registry. Implemented eventual consistency patterns and distributed tracing achieving 99.99\% data delivery guarantee across 20+ services.}
-    \resumeItemListEnd
-
-
-
 %--------SKILLS------------
 \section{Technical Skills}
   \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt, topsep=0pt]
-    \item \textbf{Languages:} Java (Expert), Scala, JavaScript/TypeScript, Python, SQL, C++, GoLang
-    \item \textbf{Distributed Systems:} Apache Kafka, gRPC, GraphQL, Microservices, Event Sourcing, CQRS, Saga Pattern
-    \item \textbf{Cloud \& Infrastructure:} AWS (EKS, MSK, RDS Aurora, DynamoDB, Lambda, S3), Kubernetes, Istio, Terraform
-    \item \textbf{Data \& Caching:} Redis Cluster, PostgreSQL, MySQL, MongoDB, Snowflake, Apache Airflow, ETL Pipelines
-    \item \textbf{DevOps \& Monitoring:} Docker, Jenkins, Jaeger, Prometheus, Grafana, CI/CD, Infrastructure as Code
+    \item \textbf{AI \& LLM:} OpenAI API, GPT-4.1, Prompt Engineering, Structured Output Parsing, Multimodal AI, MCP (Model Context Protocol), AI Agent Frameworks
+    \item \textbf{Languages:} Java, Python, Go, JavaScript, TypeScript, SQL, C++
+    \item \textbf{Backend \& Data:} Spring Boot, gRPC, GraphQL, Kafka, Redis, PostgreSQL, DynamoDB, MySQL, MongoDB, Airflow, Elasticsearch
+    \item \textbf{Cloud \& Infrastructure:} AWS (EKS, Lambda, MSK, DynamoDB, S3, Aurora), Docker, Kubernetes, Terraform, GitHub Actions, Jenkins
   \end{itemize}
 
 %-------------------------------------------

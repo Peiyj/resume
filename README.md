@@ -40,7 +40,7 @@ resume-react/
 │   │   ├── Background.js       # Animated background
 │   │   ├── Experience.js       # Professional experience
 │   │   ├── Skills.js           # Technical skills
-│   │   ├── Entrepreneurship.js # Startup experience  
+│   │   ├── AIProjects.js       # AI projects showcase
 │   │   ├── Education.js        # Academic background
 │   │   └── Footer.js           # Contact links
 │   ├── App.js                  # Main application
@@ -99,22 +99,21 @@ npm run deploy:preview
 
 ## 📊 Professional Experience Summary
 
-### 8 Roles Across 5+ Years
-- **Coursera**: Senior SWE to Intern (Mountain View, CA)
-- **Samsara**: IoT fleet management (San Francisco, CA)  
-- **Roche**: Bioinformatics tools (Tucson, AZ)
-- **UCSD Medical**: Research & ML (San Diego, CA)
+### AI-Focused Senior Engineer
+- **Coursera**: Senior SWE → SWE II → SWE I (Mountain View, CA)
+- **Samsara**: IoT fleet management (San Francisco, CA)
 
 ### Technical Expertise
-- **Languages**: Python, Java, JavaScript, TypeScript, GoLang, C++
-- **Frameworks**: React, Node.js, Django, Spring Boot, Angular
-- **Tools**: Docker, Kubernetes, AWS, Git, Jenkins
-- **Databases**: PostgreSQL, Redis, MongoDB, Elasticsearch
+- **AI & LLM**: OpenAI API, GPT-4.1, Prompt Engineering, MCP, AI Agent Frameworks
+- **Languages**: Java, Python, Go, JavaScript, TypeScript, C++
+- **Backend**: Spring Boot, gRPC, GraphQL, Kafka, Redis, PostgreSQL, DynamoDB
+- **Cloud**: AWS, Docker, Kubernetes, Terraform
 
 ## 📝 Content Customization
 
 ### Update Your Information
 - **Contact Info**: `src/components/Header.js`
+- **AI Projects**: `src/components/AIProjects.js`
 - **Experience**: `src/components/Experience.js`
 - **Skills**: `src/components/Skills.js`
 - **Education**: `src/components/Education.js`
