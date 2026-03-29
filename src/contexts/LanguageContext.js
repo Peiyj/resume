@@ -76,6 +76,7 @@ export const translations = {
     courseraSeIBullet2: "Built gRPC microservices handling ~3K QPS for contract utilization data with 98% test coverage",
     courseraSeIBullet3: "Created a reusable migration library with automated double read/write, adopted by 4 teams across 15 migrations",
     samsaraBullet1: "Optimized the Config Pusher System using Go's fan-in concurrency pattern, reducing P95 latency by 90% through request batching with an in-memory queue",
+    samsaraDesc: "I optimized the Config Pusher System (CPS) by developing patterns for batching requests, leveraging the fan-in pattern from Go routines. To achieve this, I designed a batch manager to consolidate requests using in-memory queue, ultimately reducing CPS service P95 latency by 90%. Furthermore, I built scalable microservices architecture using GoLang and integrated with MongoDB and PostgreSQL databases for high-performance data processing.",
     
     courseraInternDesc: "I supported the Roster Service Migration from Scala to Java, successfully phasing out 6 legacy APIs and deprecating ~1.1K lines of code. During this internship, I implemented 3 gRPC APIs for obtaining and updating learner rosters, handling ~200 QPS with 95% test coverage. Additionally, I contributed to the migration platform that enabled seamless transition between legacy and modern service architectures.",
     
@@ -179,6 +180,7 @@ export const translations = {
     courseraSeIBullet2: "构建处理约3K QPS的gRPC微服务，用于合同利用数据，测试覆盖率达98%",
     courseraSeIBullet3: "创建了具有自动双读/写功能的可复用迁移库，被4个团队在15次迁移中采用",
     samsaraBullet1: "使用Go的扇入并发模式优化配置推送系统，通过内存队列的请求批处理将P95延迟降低90%",
+    samsaraDesc: "我通过开发批处理请求模式优化了配置推送系统(CPS)，利用Go例程的扇入模式。为了实现这一点，我设计了一个批处理管理器，使用内存队列整合请求，最终将CPS服务P95延迟减少了90%。进一步地，我使用GoLang构建了可扩展的微服务架构，并与MongoDB和PostgreSQL数据库集成，实现高性能数据处理。",
     
     courseraInternDesc: "我支持了从Scala到Java的名册服务迁移，成功淘汰了6个遗留API并弃用了约1.1K行代码。在这次实习期间，我实施了3个gRPC API，用于获取和更新学习者名册，处理约200 QPS，测试覆盖率达到95%。此外，我为迁移平台做出了贡献，使遗留和现代服务架构之间的无缝过渡成为可能。",
     
