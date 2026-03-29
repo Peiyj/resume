@@ -69,8 +69,6 @@ export const translations = {
     softwareEngineerII: "Software Engineer II",
     softwareEngineerI: "Software Engineer I",
     softwareEngineeringIntern: "Software Engineering Intern",
-    softwareEngineerIntern: "Software Engineer Intern",
-    teachingAssistant: "Teaching Assistant",
     
     // Education
     northwesternUniversity: "Northwestern University",
@@ -102,9 +100,7 @@ export const translations = {
     
     // Locations
     mountainViewCA: "Mountain View, CA",
-    sanFranciscoCA: "San Francisco, CA", 
-    sanDiegoCA: "San Diego, CA",
-    tucsonAZ: "Tucson, AZ",
+    sanFranciscoCA: "San Francisco, CA",
     evanstonIL: "Evanston, IL",
     laJollaCA: "La Jolla, CA"
   },
@@ -166,8 +162,6 @@ export const translations = {
     softwareEngineerII: "软件工程师II",
     softwareEngineerI: "软件工程师I", 
     softwareEngineeringIntern: "软件工程实习生",
-    softwareEngineerIntern: "软件工程实习生",
-    teachingAssistant: "助教",
     
     // Education
     northwesternUniversity: "西北大学",
@@ -199,9 +193,7 @@ export const translations = {
     
     // Locations
     mountainViewCA: "加利福尼亚州山景城",
-    sanFranciscoCA: "加利福尼亚州旧金山", 
-    sanDiegoCA: "加利福尼亚州圣地亚哥",
-    tucsonAZ: "亚利桑那州图森",
+    sanFranciscoCA: "加利福尼亚州旧金山",
     evanstonIL: "伊利诺伊州埃文斯顿",
     laJollaCA: "加利福尼亚州拉霍亚"
   }
