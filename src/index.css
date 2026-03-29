@@ -575,6 +575,21 @@ strong {
     font-size: 1.1rem;
 }
 
+/* Highlighted metrics and tech in descriptions */
+.highlight-metric {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.highlight-tech {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.dark-theme .highlight-tech {
+    color: #e2e8f0;
+}
+
 /* Technology tags */
 .technologies {
     display: flex;

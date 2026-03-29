@@ -63,19 +63,12 @@ export const translations = {
     mastersDegree: "Master of Science in Computer Engineering",
     bachelorsDegree: "Bachelor of Science in Computer Engineering",
     
-    courseraSeniorBullet1: "Led a team of 5 engineers to design and build an AI-powered content curation platform using OpenAI GPT-4.1 with multimodal prompt engineering, structured output parsing, and production-grade LLM service integration for enterprise learning program creation",
-    courseraSeniorBullet2: "Architected a Badge Management Platform — a stream-processing system for real-time badge issuance serving all enterprise organizations, contributing to >$10M in contract ACVs",
-    courseraSeniorBullet3: "Lead a team of 3–4 engineers designing and shipping enterprise-scale platforms for contract management and badge issuance across Coursera's B2B product line",
-    courseraSeniorBullet4: "Led a P0 Allowlist Management Platform project, reducing contract-level course update time from 2 weeks to under 10 seconds through near real-time data pipelines",
-    courseraSeniorBullet5: "Built conflict detection workflows with Apache Airflow for automatic resolution of concurrent updates; launched internal tooling with Retool cutting engineering ops time from 95 min to <5 sec",
-    courseraSeIIBullet1: "Led a team of 3 engineers to design and ship a Clips Management Platform — a fault-tolerant distributed system for clips metadata CRUD across the platform",
-    courseraSeIIBullet2: "Enabled parallel processing on concurrent batch updates, reducing average metadata update time by 80%",
-    courseraSeIIBullet3: "Implemented distributed Redis cache reducing P95 and P99 read latency by 80% and 92% respectively",
-    courseraSeIIBullet4: "Designed application-level transactions ensuring data integrity and isolation for downstream curriculum services",
-    courseraSeIBullet1: "Led Scala-to-Java service migrations, deprecating 12 legacy APIs and ~5K lines of code through a migration platform",
-    courseraSeIBullet2: "Built gRPC microservices handling ~3K QPS for contract utilization data with 98% test coverage",
-    courseraSeIBullet3: "Created a reusable migration library with automated double read/write, adopted by 4 teams across 15 migrations",
-    samsaraBullet1: "Optimized the Config Pusher System using Go's fan-in concurrency pattern, reducing P95 latency by 90% through request batching with an in-memory queue",
+    courseraLeadDesc: "I led a team of 5 engineers to design and build an AI-powered content curation platform using OpenAI GPT-4.1 with multimodal prompt engineering, structured output parsing, and production-grade LLM service integration for enterprise learning program creation. Additionally, I led a P0 project with 4 engineers, designing and implementing an Allowlist Management Platform for managing near real-time data updating of courses and specializations at the contract-level, saving customer time from 2 weeks to under 10 seconds. I developed a RPC microservice with Java and gRPC supporting contract-level allowlist management. Furthermore, I implemented a conflict detection job using Apache Airflow that automatically resolves concurrent updates by the same user based on latest timestamp. Moreover, I launched an internal contract-scope allowlist management software using Retool, saving engineering time from 95 minutes to under 5 seconds. Currently, I lead a team of 3–4 engineers to design and develop a Badge Management Platform — a stream-processing platform for reliable real-time badge management service providing badge issuance workflow for learners across all organizations, leading to >$10M in contract ACVs.",
+    
+    courseraSeII: "I led a team of 3 engineers to design and develop a Clips Management Platform — a large scale, fault-tolerant, distributed system for clips metadata management service allowing creating, reading, updating, deleting clips metadata across the platform. To achieve scalability, I enabled parallel processing on concurrent, non-conflicting batch clip metadata updates and distributed workload to multiple threads, reducing average clips metadata update time by 80%. Additionally, I implemented distributed Redis Cache to reduce P95 and P99 latency of read operations by 80% and 92% respectively. Furthermore, I enforced data integrity, consistency and isolation for all clips metadata CRUD operations by implementing application level transactions, providing well-defined transaction boundaries for downstream curriculum updating services.",
+    
+    courseraSeI: "I led the Contract and User service migrations from Scala to Java through the Java Migration Platform, successfully phasing out 12 legacy APIs and deprecating ~5K lines of code. In this role, I developed a gRPC microservice with 12 APIs to fetch and update contract utilization and learning data, handling ~3K QPS with 98% test coverage. Moreover, I developed a gRPC microservice with 7 APIs to fetch and update learner profiles, handling ~200 QPS with 95% test coverage. Additionally, I implemented the Java migration library with automated double read/write functionality, which was subsequently used in 15 migrations among 4 internal teams.",
+    
     samsaraDesc: "I optimized the Config Pusher System (CPS) by developing patterns for batching requests, leveraging the fan-in pattern from Go routines. To achieve this, I designed a batch manager to consolidate requests using in-memory queue, ultimately reducing CPS service P95 latency by 90%. Furthermore, I built scalable microservices architecture using GoLang and integrated with MongoDB and PostgreSQL databases for high-performance data processing.",
     
     courseraInternDesc: "I supported the Roster Service Migration from Scala to Java, successfully phasing out 6 legacy APIs and deprecating ~1.1K lines of code. During this internship, I implemented 3 gRPC APIs for obtaining and updating learner rosters, handling ~200 QPS with 95% test coverage. Additionally, I contributed to the migration platform that enabled seamless transition between legacy and modern service architectures.",
@@ -167,19 +160,12 @@ export const translations = {
     mastersDegree: "计算机工程硕士",
     bachelorsDegree: "计算机工程学士",
     
-    courseraSeniorBullet1: "领导5名工程师团队，设计并构建了AI驱动的内容策展平台，使用OpenAI GPT-4.1进行多模态提示工程、结构化输出解析和生产级LLM服务集成，用于企业学习项目创建",
-    courseraSeniorBullet2: "设计了徽章管理平台——一个实时徽章颁发的流处理系统，服务所有企业组织，贡献超过1000万美元的合同年度价值",
-    courseraSeniorBullet3: "领导3-4名工程师团队，设计并交付企业级合同管理和徽章颁发平台，服务Coursera的B2B产品线",
-    courseraSeniorBullet4: "领导了P0允许列表管理平台项目，通过近实时数据管道将合同级课程更新时间从2周缩短到10秒以内",
-    courseraSeniorBullet5: "使用Apache Airflow构建冲突检测工作流，自动解决并发更新；使用Retool推出内部工具，将工程运维时间从95分钟缩短到5秒以内",
-    courseraSeIIBullet1: "领导3名工程师团队，设计并交付了剪辑管理平台——一个容错分布式系统，用于平台上剪辑元数据的CRUD操作",
-    courseraSeIIBullet2: "启用并发批量更新的并行处理，将平均元数据更新时间减少80%",
-    courseraSeIIBullet3: "实现分布式Redis缓存，将P95和P99读取延迟分别降低80%和92%",
-    courseraSeIIBullet4: "设计应用层事务，确保下游课程服务的数据完整性和隔离性",
-    courseraSeIBullet1: "领导Scala到Java的服务迁移，通过迁移平台淘汰12个遗留API和约5K行代码",
-    courseraSeIBullet2: "构建处理约3K QPS的gRPC微服务，用于合同利用数据，测试覆盖率达98%",
-    courseraSeIBullet3: "创建了具有自动双读/写功能的可复用迁移库，被4个团队在15次迁移中采用",
-    samsaraBullet1: "使用Go的扇入并发模式优化配置推送系统，通过内存队列的请求批处理将P95延迟降低90%",
+    courseraLeadDesc: "我领导了一个由5名工程师组成的团队，设计并构建了一个AI驱动的内容策展平台，使用OpenAI GPT-4.1进行多模态提示工程、结构化输出解析和生产级LLM服务集成，用于企业学习项目创建。此外，我领导了一个由4名工程师组成的P0项目，设计并实施了一个允许列表管理平台，用于在合同级别管理课程和专业的近实时数据更新，将客户时间从2周缩短到10秒以内。我开发了一个使用Java和gRPC的RPC微服务，支持合同级别的允许列表管理。进一步地，我实施了一个使用Apache Airflow的冲突检测作业，根据最新时间戳自动解决同一用户的并发更新。此外，我推出了一个内部合同范围的允许列表管理软件，使用Retool，将工程时间从95分钟缩短到5秒以内。目前，我领导一个由3-4名工程师组成的团队，设计和开发徽章管理平台——一个可靠的实时徽章管理服务的流处理平台，为所有组织的学习者提供徽章颁发工作流程，带来了超过1000万美元的合同年度合同价值。",
+    
+    courseraSeII: "我领导了一个由3名工程师组成的团队，设计和开发了剪辑管理平台——一个大规模、容错、分布式系统，用于剪辑元数据管理服务，允许在平台上创建、读取、更新、删除剪辑元数据。为了实现可扩展性，我启用了对并发、非冲突批量剪辑元数据更新的并行处理，并将工作负载分配给多个线程，将平均剪辑元数据更新时间减少了80%。此外，我实施了分布式Redis缓存，将读取操作的P95和P99延迟分别减少了80%和92%。进一步地，我通过实施应用程序级事务来强制所有剪辑元数据CRUD操作的数据完整性、一致性和隔离性，为下游课程更新服务提供了明确定义的事务边界。",
+    
+    courseraSeI: "我领导了通过Java迁移平台从Scala到Java的合同和用户服务迁移，成功淘汰了12个遗留API并弃用了约5K行代码。在这个角色中，我开发了一个具有12个API的gRPC微服务，用于获取和更新合同利用率和学习数据，处理约3K QPS，测试覆盖率达到98%。此外，我开发了一个具有7个API的gRPC微服务，用于获取和更新学习者档案，处理约200 QPS，测试覆盖率达到95%。另外，我实施了具有自动双读/写功能的Java迁移库，该库随后在4个内部团队的15次迁移中使用。",
+    
     samsaraDesc: "我通过开发批处理请求模式优化了配置推送系统(CPS)，利用Go例程的扇入模式。为了实现这一点，我设计了一个批处理管理器，使用内存队列整合请求，最终将CPS服务P95延迟减少了90%。进一步地，我使用GoLang构建了可扩展的微服务架构，并与MongoDB和PostgreSQL数据库集成，实现高性能数据处理。",
     
     courseraInternDesc: "我支持了从Scala到Java的名册服务迁移，成功淘汰了6个遗留API并弃用了约1.1K行代码。在这次实习期间，我实施了3个gRPC API，用于获取和更新学习者名册，处理约200 QPS，测试覆盖率达到95%。此外，我为迁移平台做出了贡献，使遗留和现代服务架构之间的无缝过渡成为可能。",
